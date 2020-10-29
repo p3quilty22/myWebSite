@@ -1,0 +1,38 @@
+<html>
+<head>
+     <img src-"images/crystalball.jpeg"/><br/>
+<script languague = "JavaScript">
+   
+var rand = -1;
+
+function random()
+{
+	rand = Math.random();// Math.random return a random decimal between 0 (inclusive) and 1 (exclusive)
+    
+    //rand = rand * 10; // 0.000 and 9.99999
+    
+    // generate a random integer between -10 and 10 inclusive.    
+    rand = Math.random()*21; // 0-20
+    
+    
+    rand = Math.floor(rand); // returns the nearest integer that is LESS than the parameter
+    // rand contains a value between 0 - 20 (inclusive)
+    rand = rand - 10; //-10 to 10 -- adjusting the range to the start and end point.
+    
+    alert(rand);
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1>Random Tester</h1>
+<input type="button" value="Click here" onClick="random()"/>
+    <br/>
+    click here to <a href="index.html">return to my homepage</a>
+    
+</center>
+</body>
+</html>
+
+
